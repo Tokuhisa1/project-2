@@ -1,0 +1,33 @@
+* Create the server:
+   01) Install dependencies.
+   02) Assign the port.
+   03) Initialize the app.
+   04) Assign the default route.
+   05) Configure the logger.
+   06) Listen on the port.
+
+* Create the database:
+   07) Create [and run] any migration file(s).
+   08) Create [and run] any seed file(s).
+   09) Create [and export] the configuration file.
+
+
+* Create the model:
+   10) Import dependencies.
+   11) Create and assign a database variable.
+   12) Create [and export] the database querying methods.
+
+* Create the controller(s):
+   13) Import the model(s).
+   14) Create [and export] handling methods.
+
+* Create the routes:
+   15) Import the controller(s).
+   16) Initialize the router.
+   17) Export the router.
+
+* Create the views:
+   18) Import the view engine.
+   19) Create the partials.
+   20) Import partials in views.
+   21) Render views.
