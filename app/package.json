@@ -1,5 +1,5 @@
 {
-  "name": "Como Say What!?",
+  "name": "comoSayWhat",
   "version": "1.0.0",
   "description": "a basic CRUD app created using Node and Express",
   "main": "server.js",
@@ -12,7 +12,8 @@
   "author": "J. Winston Tokuhisa <TokuhisaWinston@Outlook.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "morgan": "^1.8.2"
   },
   "devDependencies": {
     "eslint": "^4.5.0",
