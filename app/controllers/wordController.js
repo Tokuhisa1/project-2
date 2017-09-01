@@ -63,9 +63,9 @@ module.exports = {
   },
 
   // Handles render of word form
-  showWordForm: (req, res) => {
-    res.send({
-      message: 'I\'m the HTML form for a word entry. I post to /words.',
-    });
-  },
+  // showWordForm: (req, res) => {
+  //   res.send({
+  //     message: 'I\'m the HTML form for a word entry. I post to /words.',
+  //   });
+  // },
 };

@@ -11,13 +11,31 @@ const db = pgp(dbConfig);
 // Exports model methods
 module.exports = {
 
-  // Returns two columns from the table
+  // Returns all columns from the table
   findAll() {
+    return db.many(`
+      SELECT *
+        FROM words
+    ORDER BY id
+    `);
+  },
+
+  // Returns all columns from the table
+  findLang() {
     return db.many(`
       SELECT english, spanish
         FROM words
     ORDER BY id
     `);
+  },
+
+  // Returns two columns from the table
+  findTwo(lang) {
+    return db.many(`
+      SELECT english, $/lang/
+        FROM words
+    ORDER BY id
+    `, lang);
   },
 
   // Returns individual entry from the table
