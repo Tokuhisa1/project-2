@@ -25,7 +25,7 @@ INSERT INTO words (english, french, italian, german, spanish, russian, korean, h
   ('golf', 'golf', 'golf', 'Golfspiel', 'golf', 'гольф', '골프', 'גולף', 'golf', '高爾夫球', 'golfe', 'golf'),
   ('(metal) chain', 'chaine', 'catena', 'Metallkette', 'cadena', 'цепь', '쇠사슬', 'שרשרת (מתכת)', 'lánc', '鐵鏈', 'corrente (de metal)', 'ketting'),
   ('address (street)', 'adresse', 'indirizzo', 'Adresse (Straße)', 'dirección', 'адресс (улица)', '주소', 'כתובת (רחוב)', 'cím', '地址', 'morada (rua)', 'adres (straat)'),
-  ('bowl (For cereal)', 'bol', 'scodella', 'Schüssel', 'tazón', 'миска(для каши)', '그릇', 'קערה (לדגני בוקר)', 'tál', '碗', 'tigela (para cereais)', 'kom (voor granen)'),
+  ('bowl (for cereal)', 'bol', 'scodella', 'Schüssel', 'tazón', 'миска(для каши)', '그릇', 'קערה (לדגני בוקר)', 'tál', '碗', 'tigela (para cereais)', 'kom (voor granen)'),
   ('(symphony) hall', 'grande salle', 'salone', 'Saal', 'salón', '(симфонический) зал', '전당', 'אולם (סימפוניה)', 'terem', '大禮堂', 'salão', '(concert) zaal'),
   ('(dressing room) mirror', 'miroir', 'specchio', 'Spiegel', 'espejo', 'зеркало', '거울', 'מראה (חדר הלבשה)', 'tükör', '化妝室', 'espelho (do vestiário)', '(kleedkamer) spiegel'),
   ('(water) tank', 'citerne', 'acquario', 'Wasserbecken', 'tanque', 'водоем', '수조', 'מיכל (מים)', 'tartály', '(水)箱', 'tanque (de água)', '(water) tank'),

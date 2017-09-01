@@ -15,7 +15,6 @@ CREATE TABLE words (
   russian VARCHAR(255),
   korean VARCHAR(255),
   hebrew VARCHAR(255),
-  arabic VARCHAR(255),
   hungarian VARCHAR(255),
   cantonese VARCHAR(255),
   portuguese VARCHAR(255),
