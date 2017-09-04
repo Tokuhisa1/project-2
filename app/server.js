@@ -38,6 +38,7 @@ app.use(bodyParser.urlencoded({
 // Sets up body parsing for JSON
 app.use(bodyParser.json());
 
+
 // Points to Views directory
 app.set('views', path.join(__dirname, 'views'));
 
