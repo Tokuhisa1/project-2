@@ -1,0 +1,14 @@
+<% include ../partials/boilerplate %>
+
+<div class="word">
+  <h1><%= data.english %></h1>
+  <h3><%= data.spanish %></h3>
+  <a href="/words/<%= word.id %>/edit">Edit this word</a>
+
+  <form action="/words/<%= data.id %>?_method=Delete" method="Post">
+    <input type="Submit" value="Delete">
+  </form>
+  <a href="/words/">See all words</a>
+</div>
+
+<% include ../partials/footer %>
