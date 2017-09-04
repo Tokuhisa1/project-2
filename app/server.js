@@ -14,7 +14,7 @@ const path = require('path');
 // Imports Method Override to force UPDATE and DELETE requests
 const methodOverride = require('method-override');
 
-// Imports router for application
+// Imports route file for application
 const wordRouter = require('./routes/words');
 
 
