@@ -44,6 +44,9 @@ app.set('views', path.join(__dirname, 'views'));
 // Marks EJS for use in rendering Views
 app.set('view engine', 'ejs');
 
+// Connects to static files
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Tells Method Override what flag to look for
 app.use(methodOverride('_method'));
 
@@ -54,7 +57,11 @@ app.use('/words', wordRouter);
 
 // Creates default route for application
 app.get('/', (req, res) => {
-  res.send('<h1>Hello, World!</h1>');
+  res.render('index', {
+    message:   'Hello, you!',
+    subTitle:  'Welcome to "Como Say What!?"!',
+    languages: ['English', 'French', 'Italian', 'German', 'Spanish', 'Russian', 'Korean', 'Hebrew', 'Hungarian', 'Cantonese', 'Portuguese', 'Dutch'],
+  });
 });
 
 // Activates PORT for traffic
