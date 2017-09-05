@@ -20,23 +20,14 @@ module.exports = {
     `);
   },
 
-  // Returns all columns from the table
-  findLang() {
-    return db.many(`
-      SELECT english, spanish
-        FROM words
-    ORDER BY id
-    `);
-  },
-
   // Returns two columns from the table
-  findTwo(lang) {
-    return db.many(`
-      SELECT english, $/lang/
-        FROM words
-    ORDER BY id
-    `, lang);
-  },
+  // findTwo(lang1, lang2) {
+  //   return db.many(`
+  //     SELECT $/lang1/, $/lang2/
+  //       FROM words
+  //   ORDER BY id
+  //   `, lang);
+  // },
 
   // Returns individual entry from the table
   findById(id) {

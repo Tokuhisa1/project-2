@@ -1,9 +1,9 @@
 <% include ../partials/boilerplate %>
 
-<div class="quote">
-  <h1><%= data.english %></h1>
-  <h3><%= data.spanish %></h3>
-  <a href="/words/<%= word.id %>/edit">See translation</a>
-</div>
+<form method="POST" action="/words">
+  <input name="english" type="text" placeholder="English">
+  <input name="spanish" type="text" placeholder="Spanish">
+  <input type="Submit" value="Add Word">
+</form>
 
 <% include ../partials/footer %>

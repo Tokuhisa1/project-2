@@ -2,11 +2,11 @@
 
   <div>
     <h1><%= message %></h1>
-    <h3><%= subTitle %></h3>
+    <h2><%= subTitle %></h2>
   </div>
 
   <div>
-    <h4>Como Say What!? is a personal dictionary for language learners.</h4>
+    <h3>This is a personal "dictionary" for language learners.</h3>
   </div>
 
   <p>There are words in <% languages.forEach((language, index) => { %>
@@ -16,5 +16,42 @@
       and <%- language -%>.
     <% } %>
   <% }) -%></p>
+
+  <form method='POST' action='/'>
+  <label for='language1'> Language 1
+          <select name='language1' type='text'>
+            <option value="english">English</option>
+            <option value="french">Français (French)</option>
+            <option value="italian">Italiano (Italian)</option>
+            <option value="german">Deutsche (German)</option>
+            <option value="spanish">Español (Spanish)</option>
+            <option value="russian">Русский (Russian)</option>
+            <option value="korean">한국어 (Korean)</option>
+            <option value="hebrew">עִברִית (Hebrew)</option>
+            <option value="hungarian">Magyar (Hungarian)</option>
+            <option value="cantonese">廣東話 (Cantonese)</option>
+            <option value="portuguese">Português (Portuguese)</option>
+            <option value="dutch">Nederlands (Dutch)</option>
+          </select>
+        </label></br>
+
+  <label for='language2'> Language 2
+          <select name='language2' type='text'>
+            <option value="english">English</option>
+            <option value="french">Français (French)</option>
+            <option value="italian">Italiano (Italian)</option>
+            <option value="german">Deutsche (German)</option>
+            <option value="spanish">Español (Spanish)</option>
+            <option value="russian">Русский (Russian)</option>
+            <option value="korean">한국어 (Korean)</option>
+            <option value="hebrew">עִברִית (Hebrew)</option>
+            <option value="hungarian">Magyar (Hungarian)</option>
+            <option value="cantonese">廣東話 (Cantonese)</option>
+            <option value="portuguese">Português (Portuguese)</option>
+            <option value="dutch">Nederlands (Dutch)</option>
+          </select>
+        </label></br>
+    <input type="Submit" value="Let's Start!" />
+  </form>
 
 <% include ./partials/footer %>

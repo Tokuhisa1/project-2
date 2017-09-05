@@ -1,8 +1,8 @@
 <% include ../partials/boilerplate %>
 
 <div class="word">
-  <h1><%= data.english %></h1>
-  <h3><%= data.spanish %></h3>
+  <h1><%= word.spanish %></h1>
+  <h2><%= word.english %></h2>
   <a href="/words/<%= word.id %>/edit">Edit this word</a>
 
   <form action="/words/<%= data.id %>?_method=Delete" method="Post">

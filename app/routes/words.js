@@ -18,7 +18,7 @@ wordRouter.get('/:id/edit', controller.getOne, views.showEditForm, views.show404
 wordRouter.get('/new', controller.makeNewWord, views.showAddForm);
 
 // Directs traffic for selected entry view
-wordRouter.get('/:id/')
+wordRouter.route('/:id/')
   .get(controller.getOne, views.showOne, views.show404)
   .put(controller.update, views.handleUpdate, views.show406)
   .delete(controller.destroy, views.handleChange, views.show404);
