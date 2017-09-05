@@ -32,7 +32,7 @@ module.exports = {
   // Redirects to Edit view
   showEditForm(req, res) {
     res.render('words/word-edit', {
-      data: res.locals.quote,
+      data: res.locals.word,
     });
   },
 
