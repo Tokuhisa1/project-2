@@ -15,7 +15,7 @@ const wordRouter = express.Router();
 wordRouter.get('/:id/edit', controller.getOne, views.showEditForm, views.show404);
 
 // Directs traffic for new entry view
-wordRouter.get('/new', controller.makeNewWord, views.showAddForm);
+wordRouter.get('/new', views.showAddForm);
 
 // Directs traffic for selected entry view
 wordRouter.route('/:id/')

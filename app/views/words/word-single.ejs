@@ -5,7 +5,7 @@
   <h2><%= word.english %></h2>
   <a href="/words/<%= word.id %>/edit">Edit this word</a>
 
-  <form action="/words/<%= data.id %>?_method=Delete" method="Post">
+  <form action="/words/<%= data.id %>?_method=Delete " method="Post">
     <input type="Submit" value="Delete">
   </form>
   <a href="/words/">See all words</a>
