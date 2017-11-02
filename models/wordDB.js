@@ -20,19 +20,10 @@ module.exports = {
     `);
   },
 
-  // Returns two columns from the table
-  // findTwo(lang1, lang2) {
-  //   return db.many(`
-  //     SELECT $/lang1/, $/lang2/
-  //       FROM words
-  //   ORDER BY id
-  //   `, lang);
-  // },
-
   // Returns individual entry from the table
   findById(id) {
     return db.one(`
-      SELECT english, spanish
+      SELECT english, spanish, id
         FROM words
        WHERE id = $1
     `, id);

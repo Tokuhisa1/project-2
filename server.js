@@ -31,9 +31,7 @@ const app = express();
 app.use(logger('dev'));
 
 // Sets up body parsing for strings [and arrays]
-app.use(bodyParser.urlencoded({
-  extended: false,
-}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Sets up body parsing for JSON
 app.use(bodyParser.json());
@@ -56,28 +54,18 @@ app.use(methodOverride('_method'));
 // Directs to traffic to main route
 app.use('/words', wordRouter);
 
-// app.get('/langs', (req, res) => {
-//   res.json({
-//     lang1: language1,
-//     lang2: language2,
-//   });
-// });
-
 // Creates default route for application
-app.route('/')
-  .get((req, res) => {
-    res.render('index', {
-      message:   'Welcome to Language Class!',
-      subTitle:  'Como Say What!?',
-      languages: ['English', 'French', 'Italian', 'German', 'Spanish', 'Russian', 'Korean', 'Hebrew', 'Hungarian', 'Cantonese', 'Portuguese', 'Dutch'],
-    });
-  })
-  .post((req, res) => {
-    // get input languages
-    res.json({
-      data: req,
-    });
+app.get('/', (req, res) => {
+  res.render('index', {
+    message:  'Welcome to Language Class!',
+    subTitle: 'Como Say What!?',
   });
+});
+
+// Creates error handler
+// app.use('*', (req, res) => {
+//   res.status(404).send(err);
+// });
 
 // Activates PORT for traffic
 app.listen(PORT, () => {

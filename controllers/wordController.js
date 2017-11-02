@@ -29,6 +29,7 @@ module.exports = {
   getOne(req, res, next) {
     wordDB.findById(req.params.id)
       .then((word) => {
+        console.log("word:", word);
         res.locals.word = word;
         next();
       })
@@ -57,6 +58,7 @@ module.exports = {
 
   // Handles removal of one entry from table
   destroy(req, res, next) {
+     console.log('req.params.id:', req.params.id);
     wordDB.destroy(req.params.id)
       .then(() => next())
       .catch(err => next(err));

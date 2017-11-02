@@ -19,6 +19,7 @@ module.exports = {
 
   // Passes in data for single view
   showOne(req, res) {
+    console.log('res.locals:', res.locals.word);
     res.render('words/word-single', {
       data: res.locals.word,
     });
