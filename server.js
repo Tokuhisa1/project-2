@@ -58,7 +58,6 @@ app.use('/words', wordRouter);
 app.get('/', (req, res) => {
   res.render('index', {
     message:  'Welcome to Language Class!',
-    subTitle: 'Como Say What!?',
   });
 });
 

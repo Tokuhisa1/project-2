@@ -1,14 +1,41 @@
+body {
+  background: url('../bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  text-align: center;
+}
+
+header {
+  background-color: #4c3f54;
+  font-size: 1.5em;
+  height: 25px;
+  padding: 20px;
+  text-align: left;
+}
+
+header a {
+  color: #d13525;
+  text-decoration: none;
+}
+
+span {
+  color: #486824;
+}
+
+h1, button {
+  margin-top: 2%;
+}
+
 h1 {
   font-size: 2em;
-  line-height: 1;
+  color: #f2c057;
 }
 
-h2 {
-  font-size: 1.5em;
-  line-height: 1;
-}
-
-h3 {
-  font-size: 1.25em;
-  line-height: 1;
+button {
+  padding: 10px 20px;
+  font-size: 2em;
+  cursor: pointer;
 }
