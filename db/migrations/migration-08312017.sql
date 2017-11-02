@@ -1,5 +1,5 @@
 -- Connects to the database
-\c como_say_what;
+-- \c como_say_what;
 
 -- Removes preexisting versions of table(s)
 DROP TABLE IF EXISTS words;

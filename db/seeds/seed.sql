@@ -1,5 +1,5 @@
 -- Connects to the database
-\c como_say_what;
+-- \c como_say_what;
 
 -- Populates table(s) with data
 INSERT INTO words (english, french, italian, german, spanish, russian, korean, hebrew, hungarian, cantonese, portuguese, dutch) VALUES
