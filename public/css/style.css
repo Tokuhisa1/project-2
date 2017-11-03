@@ -80,11 +80,11 @@ p {
 .word div {
   font-size: 1.25em;
   display: flex;
-  margin-left: 6%;
 }
 
 .word div a {
   display: space-around;
+  margin: 2% auto 0;
 }
 
 form {
