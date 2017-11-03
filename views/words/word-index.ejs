@@ -1,10 +1,10 @@
 <% include ../partials/boilerplate %>
 
-<a href="/words/new">Add word</a>
+<p id="add"><a href="/words/new">Add word</a></p>
 <% for (let word of data) { %>
   <div class="word">
     <p><%= word.english %></p>
-    <a href="/words/<%= word.id %>">See translation</a>
+    <a href="/words/<%= word.id %>" class="link">See translation</a>
   </div>
 <% } %>
 
